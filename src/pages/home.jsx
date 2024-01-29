@@ -48,7 +48,7 @@ export default function Home() {
     <>
       <h1> Taylor Swift</h1>
       {/* When the user hovers over the image we apply the wiggle style to it */}
-      <animated.div onMouseEnter={trigger} style={style}>
+      <animated.div style={style}>
         <img
           src="https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/pinktaylor-removebg.png?v=1706503082635"
           className="illustration"

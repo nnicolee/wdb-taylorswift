@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Router, Link } from "wouter";
+import Navbar from './components/Navbar.jsx';
 
 /**
 * This code defines the react app
@@ -25,6 +26,7 @@ export default function Home() {
   return (
     <Router>
       <Seo />
+      <Navbar />
       <main role="main" className="wrapper">
         <div className="content">
           {/* Router specifies which component to insert here as the main content */}
