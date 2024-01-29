@@ -1,28 +1,16 @@
-import React, { useState } from "react";
+import React from 'react';
 
 const Navbar = () => {
-  const [underlineColor, setUnderlineColor] = useState("pastelPurple"); // Default color
+    // ... other states and functions
 
-  const changeColor = () => {
-    // Function to change color
-    // Update this with your logic to change the color
-    setUnderlineColor(
-      underlineColor === "pastelPurple" ? "otherColor" : "pastelPurple"
+    return (
+        <nav className="navbar">
+            <ul>
+                <li className="nav-item" href="/home">Home</li>
+                <li className="nav-item" href="/about">Merch</li>
+            </ul>
+        </nav>
     );
-  };
-
-  return (
-    <nav className={`navbar ${underlineColor}`}>
-      <ul className="nav-items">
-        <li className="nav-item" onMouseOver={changeColor}>
-          Home
-        </li>
-        <li className="nav-item" onMouseOver={changeColor}>
-          Merch
-        </li>
-      </ul>
-    </nav>
-  );
 };
 
 export default Navbar;

@@ -1,48 +1,38 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 .navbar {
-    background-color: #000000; /* Light background */
-    padding: 10px;
-    text-align: center;
-    margin: 0px;
-  color: #ffffff;
-}
-
-.nav-items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    /* Add other styling as necessary */
 }
 
 .nav-item {
+    display: inline-block; /* or use flexbox, depending on your layout */
     margin: 0 15px;
     cursor: pointer;
     position: relative;
+    color: #FFFFFF; /* White text */
+  font-size:20px;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+    color: #FFFFFF; /* Keeps text white on hover */
 }
 
 .nav-item::after {
     content: '';
     display: block;
     margin: auto;
-    height: 3px;
-    width: 0px;
+    height: 2px; /* Thickness of the underline */
+    width: 0;
     background: transparent;
-    transition: width .5s ease, background-color .5s ease;
+    transition: width 0.5s ease, background-color 0.5s ease;
 }
 
 .nav-item:hover::after {
     width: 100%;
-    background: pastelPurple; /* Your initial color */
-}
-
-.pastelPurple::after {
-    background: #9a8f97; /* Pastel Purple Color */
-}
-
-.otherColor::after {
-    background: #YourOtherColor; /* Replace with your other color */
+    background: #957DAD; /* Pastel Purple Color for the underline */
 }
