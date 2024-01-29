@@ -77,14 +77,15 @@ to this section's matching END comment to see page-specific styles.
 
 /* Page titles */
 h1 {
-  color: #000000;
+  color: #ffffff;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
-  line-height: 105%;
+  line-height: 60%;
   text-align:left; /* Center text horizontally */
   margin-left: 200px;
+  margin-top: 100px;
 }
 
 
@@ -147,4 +148,29 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden; /* Hide horizontal scrollbar if any */
+}
+
+.merch-button {
+  display: inline-block;
+  font-family: HK Grotesk;
+  background-color: #000; /* Pastel Purple Color */
+  color: #FFFFFF; /* White text */
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 200px;
+  font-size: 30px;
+
+  /* Add any additional styling as per your design */
+}
+
+.merch-button:hover {
+  background-color: #BFA2DB; /* Lighter Purple on Hover */
+  color: #000000; /* Black text on hover */
+}
+
+.instructions {
+  padding: 20px; /* Add padding for spacing */
 }
