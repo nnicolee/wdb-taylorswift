@@ -18,13 +18,7 @@ const Navbar = () => {
           Home
         </li>
         <li className="nav-item" onMouseOver={changeColor}>
-          About
-        </li>
-        <li className="nav-item" onMouseOver={changeColor}>
-          Services
-        </li>
-        <li className="nav-item" onMouseOver={changeColor}>
-          Contact
+          Merch
         </li>
       </ul>
     </nav>
