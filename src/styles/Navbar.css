@@ -7,50 +7,56 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px; /* Add padding on both sides */
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 15px 20px; /* Increased padding */
+    box-sizing: border-box;
     transition: top 0.3s;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-logo {
     /* Style for logo, adjust as needed */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.navbar-title {
+    font-size: 20px;
+    font-weight: 500; /* Less bold */
 }
 
 .navbar-menu {
     display: flex;
 }
 
-.navbar-title {
-    /* Style for the title, adjust as needed */
-    font-size: 20px;
-    font-weight: 700;
-}
-
 .nav-item {
     display: inline-block;
     margin: 0 15px;
     cursor: pointer;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF;
     font-size: 20px;
-    font-weight: 700;
-    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Less bold */
+    text-decoration: none;
 }
 
 .nav-item:hover {
-    color: #FFFFFF; /* Keeps text white on hover */
+    color: #FFFFFF;
 }
 
 .nav-item::after {
     content: '';
     display: block;
     margin: auto;
-    height: 2px; /* Thickness of the underline */
+    height: 2px;
     width: 0;
     background: transparent;
     transition: width 0.5s ease, background-color 0.5s ease;
+  color: #FFFFFF;
 }
 
 .nav-item:hover::after {
     width: 100%;
-    background: #957DAD; /* Pastel Purple Color for the underline */
+    background: #957DAD;
 }
