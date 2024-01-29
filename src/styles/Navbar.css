@@ -2,20 +2,38 @@
     background-color: #000000; /* Black background */
     color: #FFFFFF; /* White text */
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Add padding on both sides */
+    box-sizing: border-box; /* Include padding in width calculation */
     transition: top 0.3s;
-    /* Add other styling as necessary */
+}
+
+.navbar-logo {
+    /* Style for logo, adjust as needed */
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-title {
+    /* Style for the title, adjust as needed */
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .nav-item {
-    display: inline-block; /* or use flexbox, depending on your layout */
+    display: inline-block;
     margin: 0 15px;
     cursor: pointer;
-    position: relative;
     color: #FFFFFF; /* White text */
-  font-size:20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none; /* Remove underline from links */
 }
 
 .nav-item:hover {
