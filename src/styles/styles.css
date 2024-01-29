@@ -38,32 +38,6 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
 /* Navigation grid */
 .footer {
   display: flex;
@@ -102,10 +76,6 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 /* Page structure */
-body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
-}
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
@@ -116,8 +86,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Page titles */
@@ -174,3 +142,14 @@ h2 {
   color: #000000;
 }
 
+body {
+  font-family: 'HK Grotesk';
+  background-color: var(--color-bg);
+  background-image: url('https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/GettyImages-1474485122%201.png?v=1706506153426');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* Reset default margin */
+  height: 100vh;
+  width: 100%;
+}

@@ -46,6 +46,7 @@ export default function Home() {
   };
   return (
     <>
+      <div class = "body-background">
       <h1> Taylor Swift</h1>
       {/* When the user hovers over the image we apply the wiggle style to it */}
       <animated.div style={style}>
@@ -65,6 +66,7 @@ export default function Home() {
           See Her Perform
         </p>
       </div>
+        </div>
     </>
   );
 }
