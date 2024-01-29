@@ -8,13 +8,7 @@ to this section's matching END comment to see page-specific styles.
 ******************************************************************************/
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #E0BBE4;
-  --color-text-main: #000000;
-  --color-primary: #E0BBE4;
-  --wrapper-height: 85vh;
   --image-max-width: 320px;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
 }
 
 /* Basic page style resets */
@@ -71,9 +65,6 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
 
 /* Page structure */
 .wrapper {
