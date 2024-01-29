@@ -60,12 +60,9 @@ export default function Home() {
 
       </div>
       <div className="instructions">
-        <h2>Using this project</h2>
+        <h2>Taylor Swift on Tour</h2>
         <p>
-          This is the Glitch <strong>Hello React</strong> project. You can use
-          it to build your own app. See more info in the{" "}
-          <Link href="/about">About</Link> page, and check out README.md in the
-          editor for additional detail plus next steps you can take!
+          See Her Perform
         </p>
       </div>
     </>
