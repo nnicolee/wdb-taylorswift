@@ -134,8 +134,6 @@ h2 {
 }
 
 body {
-  font-family: 'HK Grotesk';
-  background-color: var(--color-bg);
   background-image: url('https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/GettyImages-1474485122%201.png?v=1706506153426');
   background-size: cover;
   background-position: center;
