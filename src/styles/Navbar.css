@@ -60,3 +60,7 @@
     width: 100%;
     background: #957DAD;
 }
+
+.nav-item a{
+  color: #ffffff;
+}

@@ -40,8 +40,7 @@ to this section's matching END comment to see page-specific styles.
   border-top: 4px solid #fff;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
+.footer a:not(.btn--remix):link {
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: normal;
@@ -84,7 +83,11 @@ h1 {
   font-weight: bold;
   font-size: 100px;
   line-height: 105%;
+  text-align:left; /* Center text horizontally */
+  margin-left: 200px;
 }
+
+
 .page h1 {
   font-size: 48px;
 }
@@ -94,7 +97,7 @@ h1 {
 }
 
 .page a {
-  color: #000;
+  color: #ffffff;
 }
 
 .page a:hover {
@@ -122,8 +125,11 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 0; /* No padding if the background extends behind the navbar */
-  height: 100vh; /* Full viewport height */
-  width: 100%;
+width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 10px;
 }
 
 .wrapper {
@@ -133,4 +139,12 @@ h2 {
   margin: 0 1rem;
   padding-top: 60px; /* Space for the navbar */
   min-height: 86vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; /* Hide horizontal scrollbar if any */
 }
