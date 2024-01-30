@@ -1,5 +1,5 @@
 import React from "react";
-import MerchItem from "./MerchItem"; // Import MerchItem component
+import MerchItem from "./MerchItem"; // Make sure this path is correct
 
 const MerchPage = () => {
     // Sample merchandise data

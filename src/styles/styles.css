@@ -151,56 +151,29 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar if any */
 }
 
-.merch-page {
-    
+.merch-button {
+  display: inline-block;
+  font-family: HK Grotesk;
+  background-color: #000; /* Pastel Purple Color */
+  color: #FFFFFF; /* White text */
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 200px;
+  font-size: 30px;
+
+  /* Add any additional styling as per your design */
 }
 
-.merch-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    /* Additional styling as needed */
+.merch-button:hover {
+  background-color: #BFA2DB; /* Lighter Purple on Hover */
+  color: #000000; /* Black text on hover */
 }
 
-.merch-item {
-    position: relative;
-    overflow: hidden;
+.instructions {
+  padding: 20px; /* Add padding for spacing */
 }
 
-.merch-image {
-    width: 100%;
-    display: block;
-}
 
-.merch-details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    padding: 10px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.merch-item:hover .merch-details {
-    transform: translateY(0);
-}
-
-.merch-name, .merch-size, .merch-price {
-    margin: 5px 0;
-}
-
-.merch-buy-button {
-    background-color: #f04;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.merch-buy-button:hover {
-    background-color: #c03;
-}
