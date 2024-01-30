@@ -125,12 +125,22 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute; /* Changed to absolute positioning */
-  top: 0; /* Align to the top of the viewport */
-  left: 0; /* Align to the left of the viewport */
-  width: 100vw;
+  padding-top: 0; /* No padding if the background extends behind the navbar */
+width: 100vw;
   height: 100vh;
-  z-index: -1; /* Ensure it stays behind other content */
+  left: 0;
+  right: 0;
+  top: 10px;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+  padding-top: 60px; /* Space for the navbar */
+  min-height: 86vh;
 }
 
 body {
@@ -138,19 +148,8 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden; /* This will take care of the white space on the left */
+  overflow-x: hidden; /* Hide horizontal scrollbar if any */
 }
-
-.wrapper {
-  min-height: 86vh;
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-  padding-top: 60px;
-}
-
-/* Your other styles remain unchanged */
-
 
 .merch-button {
   display: inline-block;
