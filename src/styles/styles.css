@@ -173,15 +173,16 @@ width: 100vw;
 .merch-item {
     position: relative;
     overflow: hidden;
-    /* Additional styling as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0; /* A background color for when the image disappears */
 }
 
 .merch-image {
-    width: auto; /* Adjust width as necessary */
-    height: auto; /* Adjust height as necessary */
-    max-width: 100%; /* Ensure it doesn't overflow the container */
-    max-height: 100%; /* Ensure it doesn't overflow the container */
+    width: 100%;
     display: block;
+    transition: opacity 0.3s ease;
 }
 
 .merch-title {
@@ -192,25 +193,28 @@ width: 100vw;
 
 .merch-back {
     position: absolute;
-    top: 50%;  /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    width: 80%; /* Smaller width */
-    height: 80%; /* Smaller height */
-    background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: none; /* Prevent click events on the back */
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .merch-item:hover .merch-back {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1); /* Scale up slightly on hover */
+    pointer-events: auto; /* Enable pointer events on hover */
+}
+
+.merch-item:hover .merch-image {
+    opacity: 0; /* Hide the image on hover */
 }
 
 .merch-buy-button {

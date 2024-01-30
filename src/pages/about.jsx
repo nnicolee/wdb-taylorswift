@@ -27,29 +27,29 @@ const MerchItem = ({ item }) => {
 export default function MerchPage() {
     const merchItems = [
 
-        { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011%20(1).png?v=1706586544505', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2012%20(1).png?v=1706586548343', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2012.png?v=1706586552888', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2014%20(1).png?v=1706586557289', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2014.png?v=1706586562775', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2015%20(1).png?v=1706586566341', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2015.png?v=1706586573904', size: 'M' },
-      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2016.png?v=1706586579566', size: 'M' },
+        { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011%20(1).png?v=1706586544505', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'Sweatshirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2012%20(1).png?v=1706586548343', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'Sweatshirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2012.png?v=1706586552888', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'Sweatshirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2014%20(1).png?v=1706586557289', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'Hoodie', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2014.png?v=1706586562775', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2015%20(1).png?v=1706586566341', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2015.png?v=1706586573904', size: 'XS, S, M, L, XL, XXL' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2016.png?v=1706586579566', size: 'XS, S, M, L, XL, XXL' },
     ];
 
     return (
         <div className="merch-page">
-            <h1 className="merch-title">🟣 Exclusive Merchandise Collection</h1>
-            {/* Your existing content */}
+        <div>
+            <h1 className="merch-title">🟣 Merch </h1>
+        <img src="https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/pinktaylor-removebg.png?v=1706503082635"></img>
+          </div>
             
             <div className="merch-grid">
                 {merchItems.map((item, index) => (
                     <MerchItem key={index} item={item} />
                 ))}
             </div>
-
-            {/* Rest of your existing content */}
         </div>
     );
 }
