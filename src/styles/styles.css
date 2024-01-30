@@ -178,6 +178,8 @@ width: 100vw;
     align-items: center;
     background: #f0f0f0; /* A background color for when the image disappears */
   border-radius: 20px;
+  font-family: HK Grotesk;
+  line-height: 160%;
 }
 
 .merch-image {
