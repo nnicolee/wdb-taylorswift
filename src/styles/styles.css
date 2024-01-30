@@ -177,9 +177,11 @@ width: 100vw;
 }
 
 .merch-image {
-    width: 100%;
+    width: auto; /* Adjust width as necessary */
+    height: auto; /* Adjust height as necessary */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    max-height: 100%; /* Ensure it doesn't overflow the container */
     display: block;
-    /* Additional styling as needed */
 }
 
 .merch-title {
