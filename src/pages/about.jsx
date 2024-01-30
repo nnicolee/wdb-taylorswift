@@ -1,39 +1,55 @@
-import * as React from "react";
-// Import components for displaying products, handling shopping cart, etc.
+import React, { useState } from "react";
+// Individual Merchandise Item Component
+const MerchItem = ({ item }) => {
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleClick = () => {
+        setIsFlipped(!isFlipped);
+    };
+
+    return (
+        <div className="merch-item" onClick={handleClick}>
+            <div className={`merch-content ${isFlipped ? 'flipped' : ''}`}>
+                <div className="merch-front">
+                    <img src={item.image} alt={item.name} />
+                    <div className="merch-name">{item.name}</div>
+                </div>
+                <div className="merch-back">
+                    <div>Size: {item.size}</div>
+                    <button onClick={() => console.log(`Buying ${item.name}`)}>Buy</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+// MerchPage Component
 export default function MerchPage() {
-  // Style and triggers for the merch page can be added here
-  
-  return (
-    <div className="merch-page">
-      <h1 className="merch-title">
-        Exclusive Merchandise Collection
-      </h1>
-      <p>
-        Explore our exclusive collection of merchandise. Find the perfect items to show your support and love for our brand.
-      </p>
-      <p>
-        Don't forget to check out our special offers and limited-time deals. Add your favorite items to the cart and enjoy a seamless shopping experience.
-      </p>
-      <p>
-        Our merchandise ranges from apparel to accessories, all made with high-quality materials. We're sure you'll find something you love!
-      </p>
-      <ul>
-        <li>
-          🛍️ Shop with confidence with our secure checkout process.
-        </li>
-        <li>
-          🌟 Check out our bestsellers and latest arrivals.
-        </li>
-        <li>
-          📦 Fast and reliable shipping worldwide.
-        </li>
-      </ul>
-      <p>
-        Thank you for supporting our brand. Every purchase helps us to continue providing the best products and services to our beloved customers.
-      </p>
-      <p>
-        Built with <a href="https://reactjs.org/">React</a> and <a href="https://vitejs.dev/">Vite</a>.
-      </p>
-    </div>
-  );
+    const merchItems = [
+
+        { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+      { name: 'T-Shirt', image: 'https://cdn.glitch.global/4f194de8-562e-4c7b-bc7c-babcb839caf7/Rectangle%2011.png?v=1706583820112', size: 'M' },
+    ];
+
+    return (
+        <div className="merch-page">
+            <h1 className="merch-title">Exclusive Merchandise Collection</h1>
+            {/* Your existing content */}
+            
+            <div className="merch-grid">
+                {merchItems.map((item, index) => (
+                    <MerchItem key={index} item={item} />
+                ))}
+            </div>
+
+            {/* Rest of your existing content */}
+        </div>
+    );
 }

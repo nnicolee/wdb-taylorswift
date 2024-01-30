@@ -151,27 +151,51 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar if any */
 }
 
-.merch-button {
-  display: inline-block;
-  font-family: HK Grotesk;
-  background-color: #000; /* Pastel Purple Color */
-  color: #FFFFFF; /* White text */
-  padding: 20px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-  margin-left: 200px;
-  font-size: 30px;
-
-  /* Add any additional styling as per your design */
+.merch-page {
+    /* Your existing styles for merch-page */
 }
 
-.merch-button:hover {
-  background-color: #BFA2DB; /* Lighter Purple on Hover */
-  color: #000000; /* Black text on hover */
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    /* Additional styling as needed */
 }
 
-.instructions {
-  padding: 20px; /* Add padding for spacing */
+.merch-item {
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.merch-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.merch-content.flipped {
+    transform: rotateY(180deg);
+}
+
+.merch-front, .merch-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.merch-front {
+    /* Front side styling */
+}
+
+.merch-back {
+    /* Back side styling */
+    transform: rotateY(180deg);
+}
+
+.merch-title{
+  color: black;
+  line-height: 130%;
 }
