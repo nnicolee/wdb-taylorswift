@@ -40,7 +40,7 @@ export default function Home() {
         <div className="links">
           <Link href="/">Home</Link>
           <span className="divider">|</span>
-          <Link href="/about">Merch</Link>
+          <Link href="/merch">Merch</Link>
         </div>
       </footer>
     </Router>

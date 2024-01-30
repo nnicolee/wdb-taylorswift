@@ -222,13 +222,27 @@ width: 100vw;
 }
 
 .merch-buy-button {
-    /* Style for buy button */
-    /* Additional styling as needed */
+  display: inline-block;
+  font-family: HK Grotesk;
+  background-color: #000; /* Pastel Purple Color */
+  color: #FFFFFF; /* White text */
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  padding-top:5px;
+  font-size: 20px;
+}
+
+.merch-buy-button:hover {
+  background-color: #BFA2DB; /* Lighter Purple on Hover */
+  color: #000000; /* Black text on hover */
 }
 
 .merch-header {
     display: flex;
-    align-items: center; /* Aligns the title and image vertically */
+    align-items: center;
     justify-content: space-between; /* Spaces out the title and image */
     margin-bottom: 20px; /* Adds some space below the header */
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// Individual Merchandise Item Component
 const MerchItem = ({ item }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -16,7 +15,7 @@ const MerchItem = ({ item }) => {
         <div className="merch-back">
           <div className="merch-name">{item.name}</div>
           <div>Size: {item.size}</div>
-          <button onClick={() => console.log(`Buying ${item.name}`)}>
+          <button className="merch-buy-button" onClick={() => console.log(`Buying ${item.name}`)}>
             Buy
           </button>
         </div>
@@ -25,7 +24,6 @@ const MerchItem = ({ item }) => {
   );
 };
 
-// MerchPage Component
 export default function MerchPage() {
   const merchItems = [
     {
