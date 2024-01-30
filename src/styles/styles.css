@@ -177,6 +177,7 @@ width: 100vw;
     justify-content: center;
     align-items: center;
     background: #f0f0f0; /* A background color for when the image disappears */
+  border-radius: 20px;
 }
 
 .merch-image {
@@ -189,6 +190,7 @@ width: 100vw;
    color: black;
    line-height: 130%;
    /* Additional styling as needed */
+  
 }
 
 .merch-back {
@@ -197,7 +199,7 @@ width: 100vw;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(191, 162, 219, 0.75);
     color: white;
     display: flex;
     flex-direction: column;
@@ -223,18 +225,6 @@ width: 100vw;
 }
 
 .merch-header {
-    text-align: left; /* Aligns the title to the left */
-    margin-bottom: 20px; /* Adds some space below the header */
-}
-
-.merch-main-image {
-    width: 100%; /* Adjusts the width of the image to fit the container */
-    max-width: 600px; /* Adjust this value based on your design */
-    height: auto; /* Maintains the aspect ratio of the image */
-    display: block; /* Makes the image a block-level element */
-    margin: 0 auto; /* Centers the image */
-}
-.merch-header {
     display: flex;
     align-items: center; /* Aligns the title and image vertically */
     justify-content: space-between; /* Spaces out the title and image */
@@ -242,25 +232,26 @@ width: 100vw;
 }
 
 .merch-title-container {
-    flex-basis: 50%; /* Adjust as necessary */
+    flex-basis: 50%;
 }
 
 .merch-image-container {
-    flex-basis: 50%; /* Adjust as necessary */
+    flex-basis: 50%;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center;
 }
 
 .merch-main-image {
-    max-width: 100%; /* Ensures image does not overflow its container */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
   width: 400px;
     margin-left: 10%;
 }
 
 .merch-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust as necessary */
+    grid-template-columns: repeat(3, 3fr);
     gap: 40px;
-    /* ... */
+  width: 800px;
+  border-radius: 20px;
 }

@@ -12,9 +12,9 @@ const MerchItem = ({ item }) => {
       <div className={`merch-content ${isFlipped ? "flipped" : ""}`}>
         <div className="merch-front">
           <img src={item.image} alt={item.name} />
-          <div className="merch-name">{item.name}</div>
         </div>
         <div className="merch-back">
+          <div className="merch-name">{item.name}</div>
           <div>Size: {item.size}</div>
           <button onClick={() => console.log(`Buying ${item.name}`)}>
             Buy
