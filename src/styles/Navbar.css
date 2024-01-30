@@ -11,6 +11,7 @@
     box-sizing: border-box;
     transition: top 0.3s;
   font-family: HK Grotesk;
+  z-index: 1;
 }
 
 .navbar-left {
