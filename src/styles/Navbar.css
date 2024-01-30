@@ -66,3 +66,11 @@
 .nav-item a{
   color: #ffffff;
 }
+
+.hidden {
+    top: -100px;
+}
+
+.visible {
+    top: 0;
+}
