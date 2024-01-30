@@ -166,35 +166,35 @@ width: 100vw;
 
 .merch-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Adjust as necessary */
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Adjust as necessary */
+    gap: 40px;
 }
 
 .merch-item {
     position: relative;
     overflow: hidden;
-}
-
-.merch-front {
-    /* Your existing styles for the front */
+    /* Additional styling as needed */
 }
 
 .merch-image {
     width: 100%;
     display: block;
+    /* Additional styling as needed */
 }
 
 .merch-title {
    color: black;
-  line-height: 130%;
+   line-height: 130%;
+   /* Additional styling as needed */
 }
 
 .merch-back {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 80%; /* Smaller width */
+    height: 80%; /* Smaller height */
     background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
     color: white;
     display: flex;
@@ -202,14 +202,16 @@ width: 100vw;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none; /* Prevent click events on the back */
 }
 
 .merch-item:hover .merch-back {
     opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* Scale up slightly on hover */
 }
 
 .merch-buy-button {
     /* Style for buy button */
+    /* Additional styling as needed */
 }
