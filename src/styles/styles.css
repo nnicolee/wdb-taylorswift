@@ -82,10 +82,10 @@ h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
-  line-height: 60%;
+  line-height: 20%;
   text-align:left; /* Center text horizontally */
   margin-left: 200px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 
@@ -131,27 +131,10 @@ width: 100vw;
   left: 0;
   right: 0;
   top: 10px;
-  margin: 0;
+  margin:0;
 }
 
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-  padding-top: 60px; /* Space for the navbar */
-  min-height: 86vh;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden; /* Hide horizontal scrollbar if any */
-}
-
-.merch-button {
+    .merch-button {
   display: inline-block;
   font-family: HK Grotesk;
   background-color: #000; /* Pastel Purple Color */
@@ -163,6 +146,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
   margin-left: 200px;
   font-size: 30px;
+      margin-top:30px;
 
   /* Add any additional styling as per your design */
 }
@@ -176,4 +160,56 @@ body {
   padding: 20px; /* Add padding for spacing */
 }
 
+.merch-page {
+    /* Your existing styles */
+}
 
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust as necessary */
+    gap: 10px;
+}
+
+.merch-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.merch-front {
+    /* Your existing styles for the front */
+}
+
+.merch-image {
+    width: 100%;
+    display: block;
+}
+
+.merch-title {
+   color: black;
+  line-height: 130%;
+}
+
+.merch-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent click events on the back */
+}
+
+.merch-item:hover .merch-back {
+    opacity: 1;
+}
+
+.merch-buy-button {
+    /* Style for buy button */
+}
