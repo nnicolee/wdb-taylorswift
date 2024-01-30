@@ -221,3 +221,46 @@ width: 100vw;
     /* Style for buy button */
     /* Additional styling as needed */
 }
+
+.merch-header {
+    text-align: left; /* Aligns the title to the left */
+    margin-bottom: 20px; /* Adds some space below the header */
+}
+
+.merch-main-image {
+    width: 100%; /* Adjusts the width of the image to fit the container */
+    max-width: 600px; /* Adjust this value based on your design */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the image */
+}
+.merch-header {
+    display: flex;
+    align-items: center; /* Aligns the title and image vertically */
+    justify-content: space-between; /* Spaces out the title and image */
+    margin-bottom: 20px; /* Adds some space below the header */
+}
+
+.merch-title-container {
+    flex-basis: 50%; /* Adjust as necessary */
+}
+
+.merch-image-container {
+    flex-basis: 50%; /* Adjust as necessary */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.merch-main-image {
+    max-width: 100%; /* Ensures image does not overflow its container */
+    height: auto; /* Maintains aspect ratio */
+  width: 400px;
+    margin-left: 10%;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust as necessary */
+    gap: 40px;
+    /* ... */
+}
